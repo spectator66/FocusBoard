@@ -1,0 +1,26 @@
+name: Bug report
+description: Report something that is not working as intended.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping us improve FocusBoard.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Tell us what you expected and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open ...\n2. Click ...\n3. See error ..."
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
